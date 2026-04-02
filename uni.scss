@@ -15,10 +15,20 @@
 /* 颜色变量 */
 
 /* 行为相关颜色 */
-$uni-color-primary: #007aff;
+$uni-color-primary: #1AAD9E;
+$uni-color-primary-dark: #159A8D;
+$uni-color-primary-light: #E8F8F7;
 $uni-color-success: #4cd964;
 $uni-color-warning: #f0ad4e;
 $uni-color-error: #dd524d;
+
+/* YanYu 自定义变量 */
+$yanyu-primary: #1AAD9E;
+$yanyu-primary-dark: #159A8D;
+$yanyu-primary-light: #E8F8F7;
+$yanyu-page-bg: #F5F7FA;
+$yanyu-card-radius: 16rpx;
+$yanyu-card-shadow: 0 2rpx 16rpx rgba(0,0,0,0.06);
 
 /* 文字基本颜色 */
 $uni-text-color:#333;//基本色

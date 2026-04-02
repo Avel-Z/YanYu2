@@ -1,17 +1,120 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/splash/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "言语",
+				"navigationBarBackgroundColor": "#1AAD9E",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/checkin/index",
+			"style": {
+				"navigationBarTitleText": "打卡寻迹",
+				"navigationBarBackgroundColor": "#1AAD9E",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/library/index",
+			"style": {
+				"navigationBarTitleText": "语库",
+				"navigationBarBackgroundColor": "#1AAD9E",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/contribute/index",
+			"style": {
+				"navigationBarTitleText": "投稿",
+				"navigationBarBackgroundColor": "#1AAD9E",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/profile/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#1AAD9E",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/library/detail",
+			"style": {
+				"navigationBarTitleText": "语料详情",
+				"navigationBarBackgroundColor": "#1AAD9E",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/profile/checkin",
+			"style": {
+				"navigationBarTitleText": "我的打卡",
+				"navigationBarBackgroundColor": "#1AAD9E",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/profile/shop",
+			"style": {
+				"navigationBarTitleText": "积分商城",
+				"navigationBarBackgroundColor": "#1AAD9E",
+				"navigationBarTextStyle": "white"
 			}
 		}
 	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#1AAD9E",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath": "static/tab-home.png",
+				"selectedIconPath": "static/tab-home-active.png"
+			},
+			{
+				"pagePath": "pages/checkin/index",
+				"text": "打卡寻迹",
+				"iconPath": "static/tab-checkin.png",
+				"selectedIconPath": "static/tab-checkin-active.png"
+			},
+			{
+				"pagePath": "pages/library/index",
+				"text": "语库",
+				"iconPath": "static/tab-library.png",
+				"selectedIconPath": "static/tab-library-active.png"
+			},
+			{
+				"pagePath": "pages/contribute/index",
+				"text": "投稿",
+				"iconPath": "static/tab-contribute.png",
+				"selectedIconPath": "static/tab-contribute-active.png"
+			},
+			{
+				"pagePath": "pages/profile/index",
+				"text": "我的",
+				"iconPath": "static/tab-profile.png",
+				"selectedIconPath": "static/tab-profile-active.png"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText": "言语",
+		"navigationBarBackgroundColor": "#1AAD9E",
+		"backgroundColor": "#F5F7FA"
 	},
 	"uniIdRouter": {}
 }
