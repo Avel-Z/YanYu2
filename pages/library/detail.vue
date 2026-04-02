@@ -123,13 +123,15 @@ import { corpusList } from '../../mock/index.js'
 export default {
   name: 'LibraryDetail',
   data() {
+    const PLAYBACK_INTERVAL_MS = 300
     return {
+      PLAYBACK_INTERVAL_MS,
       item: null,
       playing: false,
       playProgress: 0,
       currentTime: '00:00',
       totalTime: '02:34',
-      totalDurationSecs: 154, // 2min 34sec = 154 seconds
+      totalDurationSecs: 154, // 2min 34seconds = 154 seconds
       favorited: false,
       playTimer: null,
       archiveFields: [
@@ -171,7 +173,7 @@ export default {
             const s = String(secs % 60).padStart(2, '0')
             this.currentTime = `${m}:${s}`
           }
-        }, 300)
+        }, this.PLAYBACK_INTERVAL_MS)
       } else {
         clearInterval(this.playTimer)
       }
