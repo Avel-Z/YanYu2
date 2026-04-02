@@ -129,6 +129,7 @@ export default {
       playProgress: 0,
       currentTime: '00:00',
       totalTime: '02:34',
+      totalDurationSecs: 154, // 2min 34sec = 154 seconds
       favorited: false,
       playTimer: null,
       archiveFields: [
@@ -165,7 +166,7 @@ export default {
             clearInterval(this.playTimer)
           } else {
             this.playProgress += 1
-            const secs = Math.floor(this.playProgress * 154 / 100)
+            const secs = Math.floor(this.playProgress * this.totalDurationSecs / 100)
             const m = String(Math.floor(secs / 60)).padStart(2, '0')
             const s = String(secs % 60).padStart(2, '0')
             this.currentTime = `${m}:${s}`

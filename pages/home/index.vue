@@ -151,17 +151,7 @@ export default {
       return map[type] || '📍'
     },
     getPointStyle(pt) {
-      const posMap = {
-        1: { left: '30%', top: '58%' },
-        2: { left: '35%', top: '65%' },
-        3: { left: '20%', top: '55%' },
-        4: { left: '50%', top: '30%' },
-        5: { left: '60%', top: '15%' },
-        6: { left: '80%', top: '40%' },
-        7: { left: '10%', top: '42%' },
-        8: { left: '48%', top: '48%' },
-      }
-      return posMap[pt.id] || { left: '50%', top: '50%' }
+      return pt.mapPos || { left: '50%', top: '50%' }
     },
     selectDistrict(name) {
       uni.showToast({ title: `${name}区`, icon: 'none' })

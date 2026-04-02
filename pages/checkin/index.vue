@@ -44,7 +44,7 @@
             <text class="district-count">{{ d.checked }}/{{ d.total }}</text>
           </view>
           <view class="progress-bar">
-            <view class="progress-fill" :style="{ width: (d.checked/d.total*100) + '%' }"></view>
+            <view class="progress-fill" :style="{ width: (d.total > 0 ? d.checked/d.total*100 : 0) + '%' }"></view>
           </view>
           <view v-if="d.checked >= d.total" class="district-badge">✓</view>
         </view>

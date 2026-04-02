@@ -1,12 +1,12 @@
 export const mapPoints = [
-  { id: 1, name: '中山路骑楼', type: '招牌', lat: 24.4498, lng: 118.0819, district: '思明', description: '百年南洋风骑楼建筑群，保存完好的闽南商业街道' },
-  { id: 2, name: '南普陀寺', type: '古厝', lat: 24.4427, lng: 118.0874, district: '思明', description: '著名佛教圣地，闽南建筑精华' },
-  { id: 3, name: '鼓浪屿老照片', type: '老照片', lat: 24.4486, lng: 118.0656, district: '思明', description: '百年历史影像记录' },
-  { id: 4, name: '集美学村', type: '古厝', lat: 24.5742, lng: 118.0975, district: '集美', description: '陈嘉庚先生创建，闽南与西洋建筑融合' },
-  { id: 5, name: '同安孔庙', type: '招牌', lat: 24.7233, lng: 118.1528, district: '同安', description: '闽南地区保存最完好的孔庙之一' },
-  { id: 6, name: '翔安闽南大厝', type: '古厝', lat: 24.6195, lng: 118.2456, district: '翔安', description: '传统闽南红砖大厝聚落' },
-  { id: 7, name: '海沧青礁慈济宫', type: '招牌', lat: 24.4832, lng: 117.9321, district: '海沧', description: '保生大帝祖庙，闽台民间信仰圣地' },
-  { id: 8, name: '湖里老工厂', type: '老照片', lat: 24.5134, lng: 118.1273, district: '湖里', description: '厦门经济特区早期工业遗址' },
+  { id: 1, name: '中山路骑楼', type: '招牌', lat: 24.4498, lng: 118.0819, district: '思明', description: '百年南洋风骑楼建筑群，保存完好的闽南商业街道', mapPos: { left: '30%', top: '58%' } },
+  { id: 2, name: '南普陀寺', type: '古厝', lat: 24.4427, lng: 118.0874, district: '思明', description: '著名佛教圣地，闽南建筑精华', mapPos: { left: '35%', top: '65%' } },
+  { id: 3, name: '鼓浪屿老照片', type: '老照片', lat: 24.4486, lng: 118.0656, district: '思明', description: '百年历史影像记录', mapPos: { left: '20%', top: '55%' } },
+  { id: 4, name: '集美学村', type: '古厝', lat: 24.5742, lng: 118.0975, district: '集美', description: '陈嘉庚先生创建，闽南与西洋建筑融合', mapPos: { left: '50%', top: '30%' } },
+  { id: 5, name: '同安孔庙', type: '招牌', lat: 24.7233, lng: 118.1528, district: '同安', description: '闽南地区保存最完好的孔庙之一', mapPos: { left: '60%', top: '15%' } },
+  { id: 6, name: '翔安闽南大厝', type: '古厝', lat: 24.6195, lng: 118.2456, district: '翔安', description: '传统闽南红砖大厝聚落', mapPos: { left: '80%', top: '40%' } },
+  { id: 7, name: '海沧青礁慈济宫', type: '招牌', lat: 24.4832, lng: 117.9321, district: '海沧', description: '保生大帝祖庙，闽台民间信仰圣地', mapPos: { left: '10%', top: '42%' } },
+  { id: 8, name: '湖里老工厂', type: '老照片', lat: 24.5134, lng: 118.1273, district: '湖里', description: '厦门经济特区早期工业遗址', mapPos: { left: '48%', top: '48%' } },
 ]
 
 export const activities = [

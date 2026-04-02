@@ -4,7 +4,7 @@
     <view class="points-banner">
       <view class="points-main">
         <text class="points-label">当前积分</text>
-        <text class="points-num">860</text>
+        <text class="points-num">{{ currentPoints }}</text>
       </view>
       <view class="points-sources">
         <view class="source-item" v-for="s in pointSources" :key="s.label">
@@ -47,10 +47,10 @@
           </view>
           <view
             class="redeem-btn"
-            :class="{ disabled: item.points > 860 }"
+            :class="{ disabled: item.points > currentPoints }"
             @tap.stop="redeemItem(item)"
           >
-            {{ item.points > 860 ? '积分不足' : '立即兑换' }}
+            {{ item.points > currentPoints ? '积分不足' : '立即兑换' }}
           </view>
         </view>
       </view>
@@ -63,7 +63,7 @@
         <image class="confirm-cover" :src="confirmItem.cover" mode="aspectFill" />
         <text class="confirm-name">{{ confirmItem.name }}</text>
         <text class="confirm-cost">消耗 {{ confirmItem.points }} 积分</text>
-        <text class="confirm-remain">兑换后剩余：{{ 860 - confirmItem.points }} 积分</text>
+        <text class="confirm-remain">兑换后剩余：{{ currentPoints - confirmItem.points }} 积分</text>
         <view class="confirm-actions">
           <view class="confirm-cancel" @tap="confirmItem = null">取消</view>
           <view class="confirm-ok" @tap="doRedeem">确认兑换</view>
@@ -83,6 +83,7 @@ export default {
       shopItems,
       selectedCat: '全部',
       confirmItem: null,
+      currentPoints: 860,
       categories: ['全部', '文创', '书籍', '合作商家'],
       pointSources: [
         { icon: '📍', label: '打卡', val: 120 },
@@ -99,7 +100,7 @@ export default {
   },
   methods: {
     redeemItem(item) {
-      if (item.points > 860) {
+      if (item.points > this.currentPoints) {
         uni.showToast({ title: '积分不足，继续探索吧！', icon: 'none' })
         return
       }
